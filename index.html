@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Subteaming and Adaptive Formation Control.">
+  <meta name="keywords" content="SAFC, collaborative multi-robot navigation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subteaming and Adaptive Formation Control</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Subteaming and Adaptive Formation Control for Collaborative Multi-Robot Navigation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Anonymous Author(s)</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Affiliation</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                    </svg>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <!-- <a href="https://www.youtube.com/watch?v=zslbOXQXtSI" -->
+                <a href=""
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                    </svg>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/safc24/safc"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                    </svg>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="is-size-5 publication-venue">
+                
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract and Figures -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-nine-tenths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Collaborative multi-robot navigation is essential for robots to operate as a team in various environments. 
+          During navigation, the robot team often needs to maintain specific formations, such as circular formations to protect human teammates in the center. 
+          However, robots frequently encounter complex scenarios, such as narrow corridors, where rigidly maintaining these formations is not feasible. 
+          Therefore, the robot team must be capable of splitting into smaller subteams and controlling these subteams to navigate while adaptively maintaining their formations.
+          In this paper, we introduce a novel subteaming and adaptive formation control (SAFC) approach for collaborative multi-robot navigation in complex scenarios. 
+          SAFC integrates three levels of robot learning in a unified hierarchical framework, including high-level deep graph cut for team splitting, 
+          intermediate-level graph learning for collaborative navigation of subteams, and low-level policy learning for controlling individual robots to navigate to the goal without collision.
+          Experimental results in both simulations and real-world robots demonstrate that SAFC enables effective subteaming and adaptive formation control, 
+          and achieves promising results in collaborative navigation through complex scenarios. 
+          </p>
+        </div>
+        
+        <!-- Figure -->
+        <figure>
+          <img src="./fig1.png" alt="Motivating scenarios: When a corridor is too narrow for a full robot team, the robots must collaboratively divide into subteams, adaptively control subteam formations to navigate the narrow corridor, and then recover to the full team afterwards.">
+          <figcaption>Figure 1: Motivating scenarios: When a corridor is too narrow for a full robot team, the robots must collaboratively divide into subteams, adaptively control subteam formations to navigate the narrow corridor, and then recover to the full team afterwards.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paper video -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Demos using Simulations and Real Physical Robots</h2>
+        <div class="publication-video">
+          <iframe src="./CoRL2024-supp.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  <!--/ Paper video -->
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed
+            under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
